@@ -1,0 +1,22 @@
+{
+    "compilerOptions": {
+      "target": "es6",
+      "module": "commonjs",
+      "moduleResolution": "node",
+      "outDir": "build",
+      "strict": true,
+      "allowJs": true,
+      "experimentalDecorators": true,
+      "emitDecoratorMetadata": true,
+      "noUnusedLocals": true,
+      "pretty": true,
+      "resolveJsonModule": true,
+      "esModuleInterop": true,
+      "declaration": true,
+      "forceConsistentCasingInFileNames":true,
+      "removeComments":true,
+      "lib": [
+        "esnext",
+      ]
+    }
+  }

@@ -1,0 +1,25 @@
+version: "3"
+
+services:
+  users-service:
+    build: "./users-service"
+    volumes:
+      - ./users-service/src:/home/node/app/src
+    ports:
+      - 3000:3000
+
+  comments-service:
+    build: "./comments-service"
+    volumes:
+      - ./comments-service/src:/home/node/app/src
+      - ./comments-service/migrations:/home/node/app/migrations
+    ports:
+      - 3001:3000
+
+  comments-service-db:
+    image: mongo
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: example
+    ports:
+      - 0.0.0.0:27017:27017

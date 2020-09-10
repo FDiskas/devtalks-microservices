@@ -1,0 +1,9 @@
+{
+  "private": true,
+  "name": "devtalks-microservices",
+  "version": "1.0.0",
+  "license": "MIT",
+  "workspaces": [
+    "*-service"
+  ]
+}
