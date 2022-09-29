@@ -1,5 +1,7 @@
 ## MicroService example
 
+Video: https://www.youtube.com/watch?v=YW3ObveTBrY 
+
 ### Features
 1. yarn workspaces
 1. mongodb migrations
